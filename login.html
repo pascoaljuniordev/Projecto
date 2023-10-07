@@ -18,15 +18,16 @@
                 <p>Seja bem-vindo, novamente, a Websoft.SA. Faça o Login para poder acessar a sua conta!</p>
                 <form action="login.php>" method="post" autocomplete="on">
                     <div class="campo">
-                        <label for="ilogin">Email</label>
-                        <input type="email" name="login" id="ilogin" placeholder="digite aqui..." autocomplete="email" required>
+                        <label for="ilogin"></label>
+                        <input type="email" name="login" id="ilogin" placeholder="Digite seu email..." autocomplete="email" required>
                     </div>
                     <div class="campo">
-                        <label for="isenha">Senha</label>
-                        <input type="password" name="senha" id="isenha" placeholder="digite aqui..." autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha"></label>
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha..." autocomplete="current-password" required minlength="8" maxlength="20">
                     </div>
                     <input type="submit" value="Entrar">
-                    <a href="esqueci.html" class="botao">Esqueci minha senha</a>
+                    <p id="cadastrar">Ainda não tens uma conta?</p>
+                    <a href="cadastrar.html" class="botao">Cadastre-se</a>
                 </form>
             </div>
         </section>

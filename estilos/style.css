@@ -14,7 +14,7 @@
 }
 
 body, html{
-    background-color: #5f2c82;
+    background: #5f2c82 url("../imagens/pexels-evie-shaffer-2748757.jpg");
     height: 100vh;
     width: 100vw;
 }
@@ -64,34 +64,34 @@ div#formulario > p{
     font-size: 0.8em;
 }
 
-/*
-#ilogin{
-    font-size: 1em;
-    width: 50%;
-    height: 20px;
-    margin: 2px;
-    border: 1px solid;
-    border-radius: 2px;
-    overflow: hidden;
-}
-#isenha{
-    font-size: 1em;
-    width: 50%;
-    height: 20px;
-    margin: 2px;
-    border: 1px solid;
-    border-radius: 2px;
-    overflow: hidden;
-}
-*/
-
 form > div.campo{
-    background-color: #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
     border-radius: 5px;
     margin: 5px 0px;
+}
+
+div.campo > label{
+    display: flex;
+    color: white;
+}
+
+#ilogin{
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#isenha{
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 form > input[type=submit]{
@@ -110,6 +110,11 @@ form > input[type=submit]{
 
 form > input[type=submit]:hover{
     background-color: #2d6462;
+}
+
+form > p#cadastrar{
+    text-align: center;
+    font-size: 1em;
 }
 
 form > a.botao{
