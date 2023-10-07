@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*:not(i,span){
+    font-family: 'Roboto', sans-serif !important;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    color: #222;
+}
+
+
+
+main{
+
+}
+
+.menuHorizaontal{
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    width: 250px;
+    height: 85vh;
+    border: 0px solid black;
+    padding: 30px 20px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 100px;
+}
+
+.fotoPerfilM{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+.fotoPerfilM img{
+    width: 30px;
+}
+
+.perfil{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.infor{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 13px;
+    
+}
+
+.infor p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+}
+
+.infor a{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    justify-content: flex-start;
+    
+}
+
+.infor a span{
+    color: #777;
+}
+.infor a .bolinha{
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #ccc;
+}
+
+.infor a:hover span{
+    transition: all 0.1s ease-in-out;
+    color: #20b2aa;
+}
+.infor a:hover .bolinha{
+    transition: all 0.1s ease-in-out;
+    background-color: #20b2aa;
+}
+
+.menuL{
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 10px 0px;
+    border-bottom: 0px solid #eee;
+    list-style: none;
+}
+
+.menuL img{
+    width: 18px;
+}
+
+.menuL li a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.menuL li a:hover{
+    transition: 0.1s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.menuL li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuL li .next{
+    width: 10px;
+}
+
+.fir{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.cimaP{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer{
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    border: 0px solid black;
+    margin-bottom: 10px;
+}
+
+
+.redes img{
+    width: 13px;
+}
+
+.fb{
+    width: 10px!important;
+}
+
+.rede{
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.direitos{
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.menuVertical{
+    margin-left: 300px;
+    border: 0px solid black;
+    padding: 30px 40px;
+    padding-left: 80px;
+    margin-top: 10px;
+}
+.cardM{
+    width: 250px;
+    height: 50px;
+    background-color: #20b2ab;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.cardsM{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.cardM:nth-child(1){
+    background-color: #ddeaf1;
+}
+
+.cardM:nth-child(2){
+    background-color: #e5ecf6;
+}
+
+.cardM:nth-child(3){
+    background-color: #e3f5ff;
+}
+
+.cardM:nth-child(4){
+    background-color: #e5ecf6;
+}
+
+.cardsM h2{
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cardsM p{
+    color: #222;
+}
+
+.cardaBans{
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+}
+
+.infjak{
+    margin: 10px 0px;
+    color: #222;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pro div{
+    display: flex;
+    flex-direction: column;
+}
+
+.pro div span:first-child{
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.pro div span{
+    margin-bottom: 10px;
+}
+
+.comun:first-child{
+    display: block;
+}
+
+.comun{
+    display: none;
+}

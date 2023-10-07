@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background-color: #5F7CBA;
+                width: 100%;
+                height: 100%;
+            }
+            form{
+                background-color: white;
+                max-width: 500px;
+                width: 70%;
+                padding: 20px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+            h3{
+                text-align: center;
+                color: #5F7CBA;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            form input[type= text],
+            form input[type= password]{
+                width: 100%;
+                height: 45px;
+                border: 1px solid #ccc;
+                padding-left: 10px;
+                margin: 10px 0;
+            }
+            form input[type= submit]{
+                width: 100%;
+                height: 40px;
+                cursor: pointer;
+                background-color: #5F7CBA;
+                color: white;
+                border: 0;
+                border-radius: 20px;
+                transition: 1s;
+            }
+            form input[type= submit]:hover{
+                background-color: #4a5f6a;
+            }
+            form input[type= text]:focus{
+                outline: 0;
+            }
+            form input[type= password]:focus{
+                outline: 0;
+            }
+            button{
+                width: 200px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <form>
+            <h3>Login</h3>
+            <input type="text" id="email" name="Email" placeholder="Digite o seu email...">
+            <input type="password" id="password" name="Password" placeholder="Digite sua senha...">
+            <input type="submit" name="Entrar" value="Enviar" onclick="logar(); return false">
+            <button class="cadastrar"><a href="signup.html">signup</a></button>
+        </form>
+        <script>
+            var email = document.getElementById('email');
+            var password = document.getElementById('password');
+
+            email.addEventListener('focus',()=>{
+                email.style.borderColor = "#5F7CBA";
+            });
+            email.addEventListener('blur',()=>{
+                email.style.borderColor = "#ccc";
+            });
+            password.addEventListener('focus',()=>{
+                password.style.borderColor = "#5F7CBA";
+            });
+            password.addEventListener('blur',()=>{
+                password.style.borderColor = "#ccc";
+            });
+
+            function logar(){
+                var usuario = document.getElementById('email').value;
+                var senha = document.getElementById('password').value;
+
+                if(usuario == "admin" && senha == "admin"){
+                    alert('Sucesso!');
+                    location.href = "home.html";
+                }else{
+                    alert('Usuário ou senha incorrectos!');
+                }
+            }
+        </script>
+    </body>
+
+</html>
