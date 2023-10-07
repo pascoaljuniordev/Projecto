@@ -16,8 +16,17 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo, novamente, a Websoft.SA. Faça o Login para poder acessar a sua conta!</p>
-                <form action="login.php>" method="post">
-
+                <form action="login.php>" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="ilogin">Email</label>
+                        <input type="email" name="login" id="ilogin" placeholder="digite aqui..." autocomplete="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="digite aqui..." autocomplete="current-password" required minlength="8" maxlength="20">
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">Esqueci minha senha</a>
                 </form>
             </div>
         </section>
