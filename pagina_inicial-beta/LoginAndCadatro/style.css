@@ -6,13 +6,16 @@ body {
 }
 
 .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     background-color:   #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     margin: 0 auto;
     padding: 20px;
-    margin-top: 10%;
 }
 
 h2 {

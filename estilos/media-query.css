@@ -17,19 +17,21 @@
     }*/
     
     section#login{
-        width: 80vw;
-        height: 280px;
+        width: 250px;
+        height: 350px;
     }
 
+    /*
     section#login > div#imagem{
         float: left;
         width: 30%;
         height: 100%;
     }
+    */
 
     section#login > div#formulario{
-        float: right;
-        width: 70%;
+        /*float: right;*/
+        width: 100%;
     }
 }
 
@@ -40,19 +42,21 @@
     }*/
 
     section#login{
-        width: 950px;
-        height: 350px;
+        width: 300px;
+        height: 400px;
     }
 
+    /*
     section#login > div#imagem{
         float: right;
         width: 50%;
         height: 100%;
     }
+    */
 
     section#login > div#formulario{
-        float: left;
-        width: 50%;
+        /*float: left;*/
+        width: 100%;
     }
 
     div#formulario > h1{
