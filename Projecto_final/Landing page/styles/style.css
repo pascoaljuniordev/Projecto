@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}/*# sourceMappingURL=style.css.map */
